@@ -2,6 +2,7 @@
 const express = require('express')
 // Importa o Handlebars para criar páginas HTML dinâmicas
 const exphbs = require('express-handlebars')
+//const path = require('path');
 // Cria a aplicação usando o Express
 const app = express()
 // Define a porta onde o servidor vai funcionar
