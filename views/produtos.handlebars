@@ -1,14 +1,8 @@
 <main>
-    <div>
-        <h1>{{produto.name}}</h1>
-    </div>
-    <div>
-        <p>Descrição do Produto: {{produto.product_description}}</p>
-    </div>
-    <div>
-        <p>INVESTIMENTO DE R${{produto.price}}</p>
-    </div>
-    <div>
+    <section class="product_details">
+        <h1 class="product_name">{{produto.name}}</h1>
+        <p class="product_description"><strong>Descrição:</strong> {{produto.product_description}}</p>
+        <p class="product_price">INVESTIMENTO DE R${{produto.price}}</p>
         <button>ADQUIRIR AGORA</button>
-    </div>
+    </section>
 </main>
