@@ -1,15 +1,14 @@
-<div>
-    <ul>
-        <div class="produtos">
-            <li>
-                {{#each produtos}}
-                    <h3>{{name}}</h3>
-                    <p>Descrição: {{product_description}}</p>
-                    <p>INVESTIMENTO DE R${{price}}</p>
-                    <!-- Passa o ID do produto dinamicamente na URL -->
-                    <a href="/produto/{{id}}"><button>ADQUIRIR AGORA</button></a>
-                {{/each}}
+<main>
+    <section>
+        <ul class="produtos-container">
+            {{#each produtos}}
+            <li class="produtos">
+                <h3>{{name}}</h3>
+                <p>Descrição: {{product_description}}</p>
+                <p class="price">INVESTIMENTO DE R${{price}}</p>
+                <a href="/produto/{{id}}"><button>ADQUIRIR AGORA</button></a>
             </li>
-        </div>
-    </ul>
-</div>
+            {{/each}}
+        </ul>
+    </section>
+</main>
