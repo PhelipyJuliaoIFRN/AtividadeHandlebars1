@@ -1,28 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="public/css/style.css">
-    
-</head>
-<body>
-    <main>
-        <div>
-            <ul>
-                <div class="produtos">
-                    <li>
-                        {{#each produtos}}
-                        <h3>{{name}}</h3>
-                        <p>Descrição: {{product_description}}</p>
-                        <p>INVESTIMENTO DE R${{price}}</p>
-                        <a href="/produto"><button>ADQUIRIR AGORA</button></a>
-                        {{/each}}
-                    </li>
-                </div>
-            </ul>
+<div>
+    <ul>
+        <div class="produtos">
+            <li>
+                {{#each produtos}}
+                    <h3>{{name}}</h3>
+                    <p>Descrição: {{product_description}}</p>
+                    <p>INVESTIMENTO DE R${{price}}</p>
+                    <!-- Passa o ID do produto dinamicamente na URL -->
+                    <a href="/produto/{{id}}"><button>ADQUIRIR AGORA</button></a>
+                {{/each}}
+            </li>
         </div>
-    </main>
-</body>
-</html>
+    </ul>
+</div>
